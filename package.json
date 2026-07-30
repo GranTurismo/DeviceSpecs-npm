@@ -1,0 +1,38 @@
+{
+  "name": "@granturismo/devicespecs",
+  "version": "1.0.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "description": "A strongly-typed, modern TypeScript/JavaScript client library for the DeviceSpecs API. Query structured, clean, and normalized specifications, chipsets, and physical metrics for over 12,000 mobile devices.",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc --module commonjs --outDir dist && tsc --module esnext --outDir dist/esm && mv dist/esm/index.js dist/index.mjs 2>/dev/null || true",
+    "demo": "ts-node demo.ts"
+  },
+  "keywords": [
+    "devicespecs",
+    "specs",
+    "hardware",
+    "mobile",
+    "gsmarena",
+    "phone",
+    "api",
+    "sdk",
+    "client",
+    "typescript"
+  ],
+  "author": "GranTurismo",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/granturismo/DeviceSpecs-npm.git"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
