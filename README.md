@@ -1,15 +1,22 @@
 # DeviceSpecs JavaScript/TypeScript SDK
 
-A strongly-typed, modern TypeScript & JavaScript client library for the **DeviceSpecs API**. Access structured, clean, and normalized specifications, chipsets, and physical metrics for over 12,000 mobile devices.
+[![NPM Version](https://img.shields.io/npm/v/@granturismo/devicespecs.svg)](https://www.npmjs.com/package/@granturismo/devicespecs)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+A strongly-typed, modern TypeScript & JavaScript client library for the **[DeviceSpecs API](https://ds.gtgroup.dev)**. Access structured, clean, and normalized specifications, chipsets, and physical metrics for over 12,000 mobile devices.
 
 ---
 
-## 🔑 Getting an API Key
+## 🌐 Official Website & Live API Portal
 
-To use this library, you need an API key:
-1. Go to [ds.gtgroup.dev](https://ds.gtgroup.dev).
-2. Register for a free developer key or subscribe to a premium plan.
-3. Keep your API key secure.
+For live interactive testing, API key acquisition, documentation, and endpoint playgrounds, visit our official website:
+
+👉 **[https://ds.gtgroup.dev](https://ds.gtgroup.dev)**
+
+### What you can do on [ds.gtgroup.dev](https://ds.gtgroup.dev):
+* 🔑 **Get API Keys**: Register for a free developer API key or upgrade your plan.
+* 🧪 **Interactive Testing & Playground**: Test queries, parameters, and endpoints directly in your browser.
+* 📖 **API Documentation**: Browse full spec models, filter parameters, and schema definitions.
 
 ---
 
@@ -35,7 +42,7 @@ yarn add @granturismo/devicespecs
 ```typescript
 import { DeviceSpecsClient, Brands } from "@granturismo/devicespecs";
 
-// Initialize client with your API key
+// Obtain your API key from https://ds.gtgroup.dev
 const client = new DeviceSpecsClient("YOUR_API_KEY");
 
 async function run() {
@@ -133,6 +140,8 @@ Retrieve all devices powered by a specific SoC (system on chip).
 ```typescript
 const tensorDevices = await client.getDevicesByChipset("Google Tensor G4");
 ```
+
+For detailed interactive API testing and live requests, visit **[ds.gtgroup.dev](https://ds.gtgroup.dev)**.
 
 ---
 
