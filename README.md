@@ -7,6 +7,10 @@ A strongly-typed, modern TypeScript & JavaScript client library for the **[Devic
 
 ---
 
+## 📦 Repository
+
+Source code, issues and releases: **[github.com/GranTurismo/DeviceSpecs-npm](https://github.com/GranTurismo/DeviceSpecs-npm)**
+
 ## 🌐 Official Website & Live API Portal
 
 For live interactive testing, API key acquisition, documentation, and endpoint playgrounds, visit our official website:
@@ -33,6 +37,28 @@ or
 ```bash
 yarn add @granturismo/devicespecs
 ```
+
+---
+
+## ⚙️ Client Options
+
+By default the client calls the RapidAPI gateway (`https://deviceultraparser.p.rapidapi.com/`) and sends your key in the `x-rapidapi-key` / `x-rapidapi-host` headers. Both can be overridden, for example to target a self-hosted gateway:
+
+```typescript
+import { DeviceSpecsClient } from "@granturismo/devicespecs";
+
+const client = new DeviceSpecsClient({
+  apiKey: "YOUR_API_KEY",
+  baseUrl: "https://deviceultraparser.p.rapidapi.com/", // default
+  apiHost: "deviceultraparser.p.rapidapi.com",          // default; derived from baseUrl when omitted
+});
+```
+
+| Option | Default | Description |
+|---|---|---|
+| `apiKey` | required | Your RapidAPI key. |
+| `baseUrl` | `https://deviceultraparser.p.rapidapi.com/` | Gateway base URL. |
+| `apiHost` | `deviceultraparser.p.rapidapi.com` | Value of the `x-rapidapi-host` header. |
 
 ---
 
@@ -161,6 +187,14 @@ try {
   }
 }
 ```
+
+---
+
+## 🧰 Other SDKs & Integrations
+
+* **Python**: `pip install devicespecs` — [GranTurismo/DeviceSpecs-python](https://github.com/GranTurismo/DeviceSpecs-python)
+* **.NET / C#**: `dotnet add package DeviceSpecs` — [GranTurismo/DeviceSpecs-nuget](https://github.com/GranTurismo/DeviceSpecs-nuget)
+* **MCP server** (Claude, Cursor, VS Code): `npx -y @granturismo/devicespecs-mcp` — [GranTurismo/DeviceSpecs-mcp](https://github.com/GranTurismo/DeviceSpecs-mcp)
 
 ---
 

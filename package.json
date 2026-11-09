@@ -1,6 +1,6 @@
 {
   "name": "@granturismo/devicespecs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publishConfig": {
     "access": "public"
   },
@@ -28,11 +28,15 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/granturismo/DeviceSpecs-npm.git"
+    "url": "https://github.com/GranTurismo/DeviceSpecs-npm.git"
   },
   "devDependencies": {
     "@types/node": "^20.11.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.3.3"
+  },
+  "homepage": "https://ds.gtgroup.dev",
+  "bugs": {
+    "url": "https://github.com/GranTurismo/DeviceSpecs-npm/issues"
   }
 }
