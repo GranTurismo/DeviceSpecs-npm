@@ -2,8 +2,8 @@ import { DeviceSpecsApiException } from "./exceptions";
 import { DeviceQueryBuilder, IQueryExecutor } from "./query-builder";
 import { DeviceSpecsOptions, DeviceSpecsResponse } from "./types";
 
-const DEFAULT_BASE_URL = "https://deviceultraparser.p.rapidapi.com/";
-const DEFAULT_API_HOST = "deviceultraparser.p.rapidapi.com";
+const DEFAULT_BASE_URL = "https://gsmarenaparser.p.rapidapi.com/";
+const DEFAULT_API_HOST = "gsmarenaparser.p.rapidapi.com";
 const API_KEY_HEADER = "x-rapidapi-key";
 const API_HOST_HEADER = "x-rapidapi-host";
 

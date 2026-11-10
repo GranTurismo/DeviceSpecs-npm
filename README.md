@@ -42,23 +42,23 @@ yarn add @granturismo/devicespecs
 
 ## ⚙️ Client Options
 
-By default the client calls the RapidAPI gateway (`https://deviceultraparser.p.rapidapi.com/`) and sends your key in the `x-rapidapi-key` / `x-rapidapi-host` headers. Both can be overridden, for example to target a self-hosted gateway:
+By default the client calls the RapidAPI gateway (`https://gsmarenaparser.p.rapidapi.com/`) and sends your key in the `x-rapidapi-key` / `x-rapidapi-host` headers. Both can be overridden, for example to target a self-hosted gateway:
 
 ```typescript
 import { DeviceSpecsClient } from "@granturismo/devicespecs";
 
 const client = new DeviceSpecsClient({
   apiKey: "YOUR_API_KEY",
-  baseUrl: "https://deviceultraparser.p.rapidapi.com/", // default
-  apiHost: "deviceultraparser.p.rapidapi.com",          // default; derived from baseUrl when omitted
+  baseUrl: "https://gsmarenaparser.p.rapidapi.com/", // default
+  apiHost: "gsmarenaparser.p.rapidapi.com",          // default; derived from baseUrl when omitted
 });
 ```
 
 | Option | Default | Description |
 |---|---|---|
 | `apiKey` | required | Your RapidAPI key. |
-| `baseUrl` | `https://deviceultraparser.p.rapidapi.com/` | Gateway base URL. |
-| `apiHost` | `deviceultraparser.p.rapidapi.com` | Value of the `x-rapidapi-host` header. |
+| `baseUrl` | `https://gsmarenaparser.p.rapidapi.com/` | Gateway base URL. |
+| `apiHost` | `gsmarenaparser.p.rapidapi.com` | Value of the `x-rapidapi-host` header. |
 
 ---
 
